@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "perimeter and area of circl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculate_speed", "calculate_speed\calculate_speed.csproj", "{4802CF7A-F82E-4BE5-8596-19BBBBC813CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "even or odd", "even or odd\even or odd.csproj", "{5FD97A81-E319-475B-9E59-6276252A21B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4802CF7A-F82E-4BE5-8596-19BBBBC813CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4802CF7A-F82E-4BE5-8596-19BBBBC813CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4802CF7A-F82E-4BE5-8596-19BBBBC813CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FD97A81-E319-475B-9E59-6276252A21B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD97A81-E319-475B-9E59-6276252A21B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD97A81-E319-475B-9E59-6276252A21B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD97A81-E319-475B-9E59-6276252A21B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
