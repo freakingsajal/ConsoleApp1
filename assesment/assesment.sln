@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "even or odd", "even or odd\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "leap year or not", "leap year or not\leap year or not.csproj", "{09098FED-2FC9-4658-8E21-96764387D007}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "height_problem", "height_problem\height_problem.csproj", "{3EC19992-1D31-4C5E-82CC-DBBFDBDECE1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{09098FED-2FC9-4658-8E21-96764387D007}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09098FED-2FC9-4658-8E21-96764387D007}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09098FED-2FC9-4658-8E21-96764387D007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC19992-1D31-4C5E-82CC-DBBFDBDECE1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC19992-1D31-4C5E-82CC-DBBFDBDECE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC19992-1D31-4C5E-82CC-DBBFDBDECE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC19992-1D31-4C5E-82CC-DBBFDBDECE1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
