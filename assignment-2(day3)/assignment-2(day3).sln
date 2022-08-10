@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "even or odd", "even or odd\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reverse string", "reverse string\reverse string.csproj", "{8C096D4D-5152-4BA7-B74F-2FFF4FDD61F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "replace lowercase characters by uppercase and vice-versa", "replace lowercase characters by uppercase and vice-versa\replace lowercase characters by uppercase and vice-versa.csproj", "{FE806A80-0E48-45A1-ACFC-C159CC0FC972}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8C096D4D-5152-4BA7-B74F-2FFF4FDD61F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C096D4D-5152-4BA7-B74F-2FFF4FDD61F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C096D4D-5152-4BA7-B74F-2FFF4FDD61F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE806A80-0E48-45A1-ACFC-C159CC0FC972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE806A80-0E48-45A1-ACFC-C159CC0FC972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE806A80-0E48-45A1-ACFC-C159CC0FC972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE806A80-0E48-45A1-ACFC-C159CC0FC972}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
