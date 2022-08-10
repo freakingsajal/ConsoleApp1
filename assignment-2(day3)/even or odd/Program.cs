@@ -13,7 +13,7 @@
             Console.Write("Input the number of elements to be stored in the array :");
             n = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Input " + n + " elements in the array :\n", n);
+            Console.Write("Input " + n + " elements in the array :\n");
             for (i = 0; i < n; i++)
             {
                 
