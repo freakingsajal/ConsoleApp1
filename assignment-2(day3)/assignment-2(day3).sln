@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "copying elements", "copying elements\copying elements.csproj", "{F1B34D31-4194-4601-96D0-7400FFD7ECCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "merge array", "merge array\merge array.csproj", "{B802B429-BDDC-4D75-B3E9-5A05E5770009}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F1B34D31-4194-4601-96D0-7400FFD7ECCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1B34D31-4194-4601-96D0-7400FFD7ECCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1B34D31-4194-4601-96D0-7400FFD7ECCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B802B429-BDDC-4D75-B3E9-5A05E5770009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B802B429-BDDC-4D75-B3E9-5A05E5770009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B802B429-BDDC-4D75-B3E9-5A05E5770009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B802B429-BDDC-4D75-B3E9-5A05E5770009}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
