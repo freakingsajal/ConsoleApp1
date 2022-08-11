@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "moving a file", "moving a f
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "key value pair", "key value pair\key value pair.csproj", "{EE297F50-C995-4B04-9015-50FB77F53B8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic Method", "Generic Method\Generic Method.csproj", "{C06A5B85-109D-4B6F-9028-DB9DEB4E0822}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EE297F50-C995-4B04-9015-50FB77F53B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE297F50-C995-4B04-9015-50FB77F53B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE297F50-C995-4B04-9015-50FB77F53B8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C06A5B85-109D-4B6F-9028-DB9DEB4E0822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C06A5B85-109D-4B6F-9028-DB9DEB4E0822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C06A5B85-109D-4B6F-9028-DB9DEB4E0822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C06A5B85-109D-4B6F-9028-DB9DEB4E0822}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
