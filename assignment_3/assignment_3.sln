@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Append text", "Append text\Append text.csproj", "{CCB21C7B-DB87-427D-980A-4D7E3B291C02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "moving a file", "moving a file\moving a file.csproj", "{A19C5152-A05C-4301-B9DD-7B93187CD49A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CCB21C7B-DB87-427D-980A-4D7E3B291C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCB21C7B-DB87-427D-980A-4D7E3B291C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCB21C7B-DB87-427D-980A-4D7E3B291C02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A19C5152-A05C-4301-B9DD-7B93187CD49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19C5152-A05C-4301-B9DD-7B93187CD49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19C5152-A05C-4301-B9DD-7B93187CD49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19C5152-A05C-4301-B9DD-7B93187CD49A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
