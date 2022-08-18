@@ -62,4 +62,54 @@ Update EmployeeInformation set EmpName='ABCD' where BaseOffice='Mumbai'
 Update EmployeeInformation set BaseOffice='chennai' where EmpId=1
 
 
+select EmpName ,Designation from EmployeeInformation
+where Designation like '%tes%';
+
+INSERT INTO EmployeeInformation VALUES
+           (30,'sajal30','1999-10-22 06:00:00','BD','pune')
+
+		   INSERT INTO EmployeeInformation VALUES
+           (45,'sajal50','1999-10-20 06:00:00','tester','pune')
+
+		   select EmpName ,Designation,BaseOffice from EmployeeInformation
+where BaseOffice not in('pune','Banglore')
+
+select EmpName ,Designation,BaseOffice from EmployeeInformation
+where EmpId between 1 and 4 and BaseOffice in('Banglore','chennai');
+
+select top 3* from EmployeeInformation
+where Designation='software Developer';
+
+select top 1 EmpId from EmployeeInformation order by newid();
+
+
+select * from EmployeeInformation;
+
+create table empsalary(
+
+EmpId int not null foreign key references EmployeeInformation(EmpId),
+EmpSalary float not null
+);
+select * from empsalary;
+
+INSERT INTO empsalary VALUES
+           (1,450000);
+		   INSERT INTO empsalary VALUES
+           (2,550000);
+		   INSERT INTO empsalary VALUES
+           (3,650000);
+		   INSERT INTO empsalary VALUES
+           (4,350000);
+		   INSERT INTO empsalary VALUES
+           (5,250000);
+
+select a.EmpId,a.EmpName,a.Designation,b.EmpSalary from  EmployeeInformation a,
+empsalary b where a.EmpId = b.EmpId and b.EmpSalary>400000 and a.BaseOffice = 'Banglore';
+
+
+alter table empsalary drop FK__empsalary__EmpId__29572725;
+
+alter table empsalary add constraint FK_EMPID_123 foreign key(EmpId) references EmployeeInformation(EmdId);
+
+
 
