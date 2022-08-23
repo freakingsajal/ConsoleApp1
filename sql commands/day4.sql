@@ -46,6 +46,8 @@ foreign key(id1) references procedureExample(id)
 
 );
 
+
+
 insert into procedureExample1 values(1,123456);
 insert into procedureExample1 values(2,123455);
 insert into procedureExample1 values(3,123454);
@@ -57,7 +59,9 @@ insert into procedureExample1 values(7,122455);
 
 
 
-select * from procedureExample1;
+select * from procedureExample;
+
+
 
 EXEC demoProcedure1;
 
@@ -154,3 +158,14 @@ else
 print('student details not found')
 
 exec checkstudent sajal1;
+
+exec orderExample;
+use demo;
+
+
+select * from EmployeeInformation;
+exec empinfo;
+
+
+create or alter procedure empinfo  as
+select EmpId,EmpName,BaseOffice from EmployeeInformation where BaseOffice='pune';
