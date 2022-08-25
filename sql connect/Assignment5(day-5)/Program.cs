@@ -1,10 +1,12 @@
 ﻿using System.Data.SqlClient;
+using System.Configuration;
 namespace day5;
 public class Day5
 {
     public static void Main(string[] args)
     {
-        string connect = "data source=LAPTOP-67GUMUCA;initial catalog=demo;trusted_connection=true";
+        //string connect = "data source=LAPTOP-67GUMUCA;initial catalog=demo;trusted_connection=true";
+        string connect = ConfigurationManager.ConnectionStrings["MyKey1"].ConnectionString;
         SqlConnection sqlconn = new SqlConnection(connect);
         sqlconn.Open();
        
