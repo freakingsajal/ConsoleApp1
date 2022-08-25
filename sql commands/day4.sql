@@ -46,7 +46,7 @@ foreign key(id1) references procedureExample(id)
 
 );
 
-
+s
 
 insert into procedureExample1 values(1,123456);
 insert into procedureExample1 values(2,123455);

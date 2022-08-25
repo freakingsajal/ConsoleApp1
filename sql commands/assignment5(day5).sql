@@ -8,7 +8,7 @@ ChannelName varchar(20)
 );
 
 create or alter procedure passportInformation @Number int ,@Name varchar(20),@ExpiryDate date , @validity int ,@channelName varchar(20) as
-if OBJECT_ID (''[dbo].['+passportInfo+']'') IS NULL)
+if OBJECT_ID ('dbo.passportInfo') IS NULL
 begin
 create table passportInfo(
 PassportNumber int,
@@ -20,8 +20,11 @@ ChannelName varchar(20)
 end
 insert into passportInfo values(@Number,@Name,@ExpiryDate,@validity,@channelName);
 
-exec passportInformation 1,'sajal','2022-12-25',13,'online';
+exec passportInformation 2,'sajal2','2022-12-25',14,'online';
 use demo;
+
+create or alter procedure fetchPassportInformation as
+select * from passportInfo;
 
 
 create table StudentInfo(
@@ -45,7 +48,7 @@ insert into StudentInfo values('sajal4',25,'Male','CSE',4);
 
 
 
- exec informationOfStudent 1;
+ exec informationOfStudent1 ;
 
 
 
@@ -53,7 +56,7 @@ insert into StudentInfo values('sajal4',25,'Male','CSE',4);
 
 
 
-select * from passportInfo;
+select * from StudentInfo;
 
 drop table passportInfo;
 drop procedure passportInformation;
