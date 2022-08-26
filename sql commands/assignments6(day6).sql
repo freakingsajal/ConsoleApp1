@@ -43,9 +43,30 @@ END
 return;
 end;
 
+
+
+/*create or alter function IncrSalary1(@designation varchar(30))
+returns @employee table (Designation varchar(30) ,EmpSalary float) as
+begin
+
+
+Insert into @employee
+       select E.Designation,ES.EmpSalary  from EmployeeInformation E
+	   INNER JOIN empsalary ES ON E.EmpId = ES.EmpId
+	   where ES.EmpSalary  =
+	  
+
+(case WHEN Designation='Manager'  THEN EmpSalary+(10*EmpSalary)/100                 WHEN  Designation='Developer'  THEN EmpSalary+(5*EmpSalary)/100                else EmpSalary				end );
+
+
+return
+end;*/
+
 select * from EmployeeInformation;
 select * from empsalary;
-select * from IncrSalary('Developer');
+select * from IncrSalary('Manager');
+
+use demo;
 
 
 --question 2

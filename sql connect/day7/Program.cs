@@ -32,7 +32,7 @@ public class Day7
           }
           sqlconn.Close();*/
 
-        string connect = "data source=LAPTOP-67GUMUCA;initial catalog=demo;trusted_connection=true";
+       /* string connect = "data source=LAPTOP-67GUMUCA;initial catalog=demo;trusted_connection=true";
          SqlConnection sqlconn = new SqlConnection(connect);
          sqlconn.Open();
          Console.WriteLine("Enter the subject");
@@ -44,7 +44,7 @@ public class Day7
          
          cmd.Parameters.Add("@subjectName", System.Data.SqlDbType.VarChar).Value = subject;
 
-        /* String Grade = cmd.ExecuteScalar().ToString();
+        String Grade = cmd.ExecuteScalar().ToString();
          //  Console.WriteLine("The Grade is " + Grade);
          if (Grade == null || Grade == String.Empty)
          {
@@ -55,20 +55,22 @@ public class Day7
              Console.WriteLine("The Grade is " + Grade);
          }*/
 
-        SqlDataReader dr = cmd.ExecuteReader();
+         //OR
+
+      /*  SqlDataReader dr = cmd.ExecuteReader();
         while (dr.Read())
         {
-            Console.WriteLine(dr[0].ToString() + " " + dr[1].ToString());
+            Console.WriteLine(dr[0].ToString());
         }
-        dr.Close();
+        dr.Close();*/
 
 
 
-        sqlconn.Close();
+       // sqlconn.Close();*/
 
 
 
-      /*  string connect = "data source=LAPTOP-67GUMUCA;initial catalog=demo;trusted_connection=true";
+       string connect = "data source=LAPTOP-67GUMUCA;initial catalog=demo;trusted_connection=true";
         SqlConnection sqlconn = new SqlConnection(connect);
         sqlconn.Open();
         Console.WriteLine("Enter the subject");
@@ -81,7 +83,7 @@ public class Day7
         {
             Console.WriteLine(dr[0].ToString() + " " + dr[1].ToString());
         }
-       dr.Close();*/
+       dr.Close();
         
 
 
