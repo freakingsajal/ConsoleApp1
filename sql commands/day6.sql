@@ -64,6 +64,7 @@ insert into @student values(@MaxMarks1,@name)
 return;
 end;
 
+ use demo;
 select * FROM fn7('JAVA');
 
 
