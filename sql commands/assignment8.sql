@@ -77,7 +77,7 @@ insert into AreaSales values('Pune',3000,22000,1700,2700,3200)
 insert into AreaSales values('Banglore',900,1000,2000,500,300)
 insert into AreaSales values('Delhi',1000,2000,2500,2500,3500)
 
-create or alter function salesreport(@region varchar(30))
+/*create or alter function salesreport(@region varchar(30))
 returns int as
 begin
 declare @totalsales int
@@ -95,4 +95,33 @@ select @Averagesales =(select demo.dbo.salesreport(@region))/5;
 return @Averagesales;
 end
 
-select demo.dbo.salesreportaverage('Pune');
+select demo.dbo.salesreportaverage('Pune');*/
+
+ALTER TABLE AreaSales
+ADD TotalSales float;
+
+
+select * from AreaSales;
+
+create or alter function salesreport1()
+returns @salestable table (TotalSales float) as
+begin
+--declare @totalsales int
+insert into @salestable
+select TotalSales=(month1+month2+month3+month4+month5) from AreaSales;
+
+return 
+end
+
+select * from salesreport1();
+
+
+create or alter function salesreportaverage1(@region varchar(30))
+returns int as
+begin
+declare @Averagesales int
+select @Averagesales =(select * from salesreport1())/5;
+return @Averagesales;
+end
+
+select demo.dbo.salesreportaverage('Pune') as AverageValue;
