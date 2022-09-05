@@ -1,0 +1,28 @@
+﻿@page
+@model PROJECT.Pages.deleteAccountModel
+@using System.Data.SqlClient;
+@{
+    try
+    {
+        string id1 = Request.Query["id"];
+        int id = Convert.ToInt32(id1);
+        string connectionstring = "Data Source=LAPTOP-67GUMUCA;Initial Catalog=demo;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        SqlConnection sqlconn = new SqlConnection(connectionstring);
+        sqlconn.Open();
+        string QueryString = "delete from AccountDetails where AccountNumber=@id ";
+        using (SqlCommand cmd = new SqlCommand(QueryString, sqlconn))
+        {
+            Console.WriteLine(id);
+
+            cmd.Parameters.AddWithValue("@id", id);
+                    Console.WriteLine(QueryString);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+             catch (Exception ex)
+            {
+               // Console.WriteLine(ex.Message);
+            }
+             Response.Redirect("/Account");
+}
+

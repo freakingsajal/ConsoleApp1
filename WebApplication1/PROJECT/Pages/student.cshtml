@@ -1,0 +1,27 @@
+﻿@page
+@model PROJECT.Pages.studentModel
+@{
+
+   
+
+}
+<h1>Student List</h1>
+<table class="table"> 
+    <thead>
+     <tr>
+         <th>Name</th>
+         <th>Age</th>
+         <th>Course</th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach(var student in Model.listofstudents){
+        <tr>
+            <td>@student.name</td>
+            <td>@student.age</td>
+            <td>@student.course</td>
+        </tr>
+        }
+    </tbody>
+</table>
+

@@ -1,0 +1,63 @@
+﻿@page
+@model PROJECT.Pages.editAccountModel
+@{
+}
+<br/>
+<h1>edit Account</h1>
+@if (Model.errorMsg.Length > 0)
+{
+    <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+        <strong>
+            @Model.errorMsg
+        </strong>
+        <button type="button" class="btn-close" data-bs-dismiss='alert' aria-label="Close"></button>
+    </div>
+}
+<form method="post">
+
+    <input type="hidden" name="accountnumber" value="@Model.acc.accountnumber" />
+
+   <!--<div class="row mb-3">
+        <label class="col-sm-3 col-form-label">AccountNumber</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="accountnumber" value="">
+        </div>
+    </div>-->
+
+      <div class="row mb-3">
+        <label class="col-sm-3 col-form-label"> Opened date </label>
+        <div class="col-sm-6">
+            <input type="datetime" class="form-control" name="opendate" value="@Model.acc.opendate">
+        </div>
+    </div>
+
+   
+
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Branch Name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="branch" value="@Model.acc.branch">
+        </div>
+    </div>
+
+
+
+    @if (Model.successMsg.Length > 0)
+{
+    <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+        <strong>
+            @Model.successMsg
+        </strong>
+        <button type="button" class="btn-close" data-bs-dismiss='alert' aria-label="Close"></button>
+    </div>
+}
+
+
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+</form>

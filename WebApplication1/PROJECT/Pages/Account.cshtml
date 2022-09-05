@@ -1,0 +1,28 @@
+﻿@page
+@model PROJECT.Pages.AccountModel
+@{
+}
+
+<h1>Account Details</h1>
+<a class='btn btn-primary' href='/Create'>Add account</a>
+<table class="table"> 
+    <thead>
+     <tr>
+         <th>Number</th>
+         <th>Opening Date</th>
+         <th>Type</th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach(var account in Model.listofaccounts){
+        <tr>
+            <td>@account.number</td>
+     
+            <td style="color:brown">@account.stringdate</td>
+            <td>@account.type</td>
+            <td><a class="btn btn-primary btn-sm" href="/editAccount?id=@account.number">update</a></td>
+            <td><a class="btn btn-danger btn-sm" href="/deleteAccount?id=@account.number">Delete</a></td>
+        </tr>
+        }
+    </tbody>
+</table>
